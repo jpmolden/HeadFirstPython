@@ -1,0 +1,20 @@
+## Lists the number of vowels in a entered string
+
+word = input("Seach for vowels in this word:>>>")
+# Initialize the dictionary
+vowels = ['a','e','i','o','u']
+# Empty found dict
+found = {}
+##{ 'a':0, 'e':0, 'i':0, 'o':0, 'u':0 }
+
+# Iterate over each letter in the entered string
+for letter in word:
+    if letter in vowels:
+        # Initialize key if needed and increment
+        found.setdefault(letter, 0)
+        found[letter] += 1
+        
+
+# Print the dictionary results sorted in key order     
+for k, v in sorted(found.items()):
+    print( k, 'was found',v , 'times(s).')

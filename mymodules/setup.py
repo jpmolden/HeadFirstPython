@@ -9,3 +9,7 @@ setup(
     url='github.com/jpmolden',
     py_modules=['vsearch'],
 )
+
+## Windows dist:
+## py -3 setup.py sdist
+## py -3 -m pip install vsearch-1.0.tar.gz

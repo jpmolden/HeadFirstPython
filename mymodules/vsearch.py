@@ -1,4 +1,3 @@
-
 ##
 ##def search4vowels(word):
 ##    """ Searches for the vowels in an

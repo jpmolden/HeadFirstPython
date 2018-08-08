@@ -17,7 +17,7 @@ def search4vowels(phrase: str) -> set:
     return vowels.intersection(set(phrase))
 
 
-def search4letter(phrase: str='HelloWorld', letters: str='aeiou') -> set:
+def search4letter(phrase: str, letters: str='aeiou') -> set:
     """ Searches for the letters in a
     string. """
     return set(letters).intersection(set(phrase.lower()))

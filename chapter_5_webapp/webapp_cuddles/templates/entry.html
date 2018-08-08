@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>{{ j_title }}</h2>
+
+<form method='POST' action='/requestcomplete'>
+<table>
+<p>Use this form to submit a cuddle request:</p>
+<tr><td>Name:</td><td><input name='name' type='TEXT' width='60' value='Bri' placeholder='Must be Bri!!!' pattern="Bri|Bri Sparks|Brianna Sparks|Brianna" title="Only Bri is allowed cuddles!!" required></td></tr>
+<tr><td>Occupation:</td><td><input name='occupation' type='TEXT' placeholder='Engineer, Sweetheart, Cuddler ect..' value='' required></td></tr>
+<tr><td>Email:</td><td>
+	 <div class="emailBox">
+	   <input name='email' id="emailAddress" type="email" size="64" maxLength="64" required
+			  placeholder="username@cuddles.com" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+			  title="Please proide your cuddly email address">
+	 </div>
+</td></tr>
+<tr><td>Number of Cuddles Needed:</td><td>
+        <div>
+            <input type="radio" id="zero" value="0" name="cuddle_num" checked />
+            <label for="zero">Zero</label>
+        </div>
+
+        <div>
+            <input type="radio" id="one" value="1" name="cuddle_num" />
+            <label for="one">One</label>
+        </div>
+
+        <div>
+            <input type="radio" id="billion" value="1000000000" name="cuddle_num" />
+            <label for="billion">One Billion!</label>
+        </div>
+</td></tr>
+</td></tr>
+</table>
+<p>Submit Cuddle Request:</p>
+<p><input value='Ready!' type='SUBMIT'></p>
+</form>
+{% endblock %}

@@ -1,0 +1,10 @@
+CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON database.* TO 'username'@'localhost'; 
+
+LOGIN:
+
+C:\Users\johnp_000>mysql -u mrcuddle -p cuddlelogDB
+Enter password: *******
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 17
+Server version: 8.0.12 MySQL Community Server - GPL

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ j_title }}</h2>
+
+<p>Your cuddle request has been approved and will be processed in 1-2 days:</p>
+<table>
+<tr><td>Cuddles Approved For:</td><td>{{ j_name }}</td></tr>
+<tr><td>Email confirmation sent to:</td><td>{{ j_email }}</td></tr>
+</table>
+
+<p>Thank you for submitting your cuddle request:</p>
+<h3>{{ j_cuddle_num }} cuddles have been added to your account</h3>
+
+{% endblock %}
